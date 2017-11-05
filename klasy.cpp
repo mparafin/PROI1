@@ -1,5 +1,6 @@
-#include <klasy.h>
+#include "klasy.hpp"
 
-Date::incrementDate(){
-    this.day += 1;
+Date Date::incrementDate(){
+    this->day += 1;
+    return *this;
 }

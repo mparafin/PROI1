@@ -3,4 +3,4 @@ class Date{
     int day, month, year;
     public:
     Date incrementDate();
-}
+};

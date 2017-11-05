@@ -1,5 +1,5 @@
 #include <iostream>
-#include "klasy.h"
+#include "klasy.hpp"
 
 using namespace std;
 
@@ -7,6 +7,6 @@ string hue;
 
 int main(){
     hue = "Yessss.";
-    cout<< "lololol " << hue << "\a";
+    cout<< "lololol  " << hue << "\n";
     return 1;
 }
