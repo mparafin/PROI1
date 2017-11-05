@@ -1,7 +1,6 @@
 class Date{
     private:
-        int day = 1, month = 2, year = 2015;
+        int day, month, year;
     public:
         int getDay();
-        Date incrementDate();
 };

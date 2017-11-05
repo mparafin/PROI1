@@ -1,18 +1,20 @@
-using namespace std;
 #include <vector>
 #include "Date.hpp"
+using namespace std;
 
 class Calendar{
 private:
     vector<Date> Dates;
-    int counter;
 public:
     Calendar();
-    Calendar( Calendar& );
-    ~Calendar();
+    Calendar(Calendar&);
+    //~Calendar();
     Calendar& operator=(Calendar&);
     Calendar& operator+(Calendar&);
     Calendar& operator+=(Calendar&);
+
+    bool checkDate(Date);
+    int getSize(){return Dates.size();}
 
     vector<Date> show();
     Date getFirst();
