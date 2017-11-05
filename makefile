@@ -1,11 +1,16 @@
-Projekt1: main.o Date.o
-	g++ main.o Date.o -o Projekt1
+CC=g++
 
-main.o: main.cpp Date.hpp
-	g++ -c main.cpp
+Projekt1: main.o Date.o Calendar.o
+	$(CC) main.o Date.o Calendar.o -o Projekt1
 
-klasy.o: Date.hpp Date.cpp
-	g++ -c Date.cpp
+main.o: main.cpp Date.hpp Calendar.hpp
+	$(CC) -c main.cpp
+
+Date.o: Date.hpp Date.cpp
+	$(CC) -c Date.cpp
+
+Calendar.o: Calendar.hpp Calendar.cpp
+	$(CC) -c Calendar.cpp
 
 clean:
 	rm *.o
