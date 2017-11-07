@@ -61,7 +61,7 @@ Date& Calendar::getLast() const { //zwraca najpóźniejszą datę ze zbioru
     if(Dates->size() == 0) return *last;
     *last = (*Dates)[0];
     for (int i=1; i < Dates->size(); i++){
-        if((*Dates)[i] <= *last) *last = (*Dates)[i];
+        if((*Dates)[i] >= *last) *last = (*Dates)[i];
     }
     return *last;
 } 

@@ -4,8 +4,6 @@
 
 using namespace std;
 
-string hue;
-
 int main(){
     Calendar cal1, cal2;
     /*Date date1, date2, date3;
@@ -20,7 +18,7 @@ int main(){
     //cal3 += cal1;
     cout << "Size3: " << cal3.getSize() << "\n";*/
 
-    Date date1(10, 12, 2015), date2(21, 10, 1997), date3(20, 11, 1997), date4(27, 6, 1999);
+    Date date1(10, 12, 2015), date2(21, 11, 1997), date3(20, 11, 1997), date4(19, 11, 1997);
     cal1.addDate(date1);
     cal2.addDate(date1);
     cal2.addDate(date2);
@@ -32,6 +30,7 @@ int main(){
     cout << "-DODANIE CAL2 DO CAL1\n" << cal1 << "\n";
     cout << "Size: " << cal1.getSize() << "\n";
     cout << "First: " << cal1.getFirst() << "\n";
+    cout << "Last: " << cal1.getLast() << "\n";
     
     return 1;
 }
